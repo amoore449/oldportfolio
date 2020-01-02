@@ -12,7 +12,10 @@
   font-size: 24px;
 
 }
-
+#descripofme{
+  padding-left: 20%;
+  padding-right: 20%;
+}
 .flip .back {
     background: #2184cd;
     color: #fff;
