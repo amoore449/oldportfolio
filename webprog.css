@@ -67,6 +67,15 @@ h1 {
   .column {
     width: 50%;
   }
+
+.column-quarter {
+  float: left;
+  width: 50%;
+}
+.column-half {
+  float: left;
+  width: 50%;
+}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -74,6 +83,15 @@ h1 {
   .column {
     width: 100%;
   }
+
+.column-quarter {
+  float: left;
+  width: 100%;
+}
+.column-half {
+  float: left;
+  width: 100%;
+}
 }
 * {box-sizing: border-box}
 .mySlides1, .mySlides2 {display: none}
