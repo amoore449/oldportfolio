@@ -1,0 +1,73 @@
+#robo2015, #robo2016, #robo2017, #robo2018{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle; align-content: left;}
+
+/* Slideshow container */
+.slideshow-container {
+ float:left;
+ width: 49.9%;
+ position: relative;
+
+}
+
+#mytitle, #mysubtitle{
+	opacity: 1;
+}
+#robodes{
+	float:left;
+	width:49.99999%;
+	text-align: center;
+}
+
+h4{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+@media (max-width:601px){
+.slideshow-container {
+  width: 100%;
+  position: relative;
+}
+#robodes{
+	float:left;
+	width:100%;
+	text-align: center;
+}
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}

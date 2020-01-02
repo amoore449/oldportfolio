@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Allison Moore's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="otherrobotics.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+
+
+
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+  <!-- Header -->
+  <header class="w3-xlarge top-padding-24">
+        <a href="#about" class="w3-right w3-button w3-white">About</a>
+      <a href="index.html" class="w3-right w3-button w3-white">Home</a>
+      <br/><br/>
+<div class="w3-center" id="headertext"><div id="mytitle">Engineering Education</div> <div id="mysubtitle">
+     When not building my own projects, I love working with kids to spread interest in STEM and help students feel confident in trying (and failing at) their own ideas.</div></div>
+  </header>
+
+  <div id="head-padding"></div>
+
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <!--frc robotics-->
+    <div class="w3-half">
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <div id="roboother">
+    <h1>2018-Present</h1>
+    <h2>Tufts STOMP</h2>
+    <h4>Tufts Student Teacher Outreach Mentorship Program</h4>
+    <h4>I design and teach engineering curriculum for elementary school students through the Tufts STOMP program. I have worked in 5 classrooms over one and a half years. Curriculum can span from electricity to coding to found materials building to 3D Printing.</h4>
+  </div>
+            <img id="trinitypic" src="Pictures/stomp3-dark.jpg" style="width:100%">
+          </div>
+          <div class="mySlides1">
+        <img id="trinitypic" src="Pictures/stomp1.jpg" style="width:100%">
+         </div>
+          <div class="mySlides1">
+        <img id="trinitypic" src="Pictures/stomp2.png" style="width:100%">
+         </div>
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
+</div>
+    <!--hp labs-->
+    <div class="w3-half">
+       <div class="slideshow-container">
+          <div class="mySlides2">
+            <div id="roboother">
+            <h1>2019</h1>
+            <h2>Camp Galileo</h2>
+            <h4>Over the summer I worked as a Team Leader teaching growth mindset project thinking through Camp Galileo. I worked from around 7:30am to 6pm leading teams of 15-20 campers through art, science, and outdoors activities.</h4>
+            </div>
+            <img id="HPLabs"src="Pictures/galileo1-dark.png" style="width:100%;">
+          </div>
+          <div class="mySlides2">
+            <img id="trinitypic" src="Pictures/galileo2.png" style="width:100%">
+         </div>
+          <div class="mySlides2">
+            <img id="trinitypic" src="Pictures/galileo3.png" style="width:100%">
+         </div>
+          <div class="mySlides2">
+            <img id="trinitypic" src="Pictures/stomp4.png" style="width:100%">
+         </div>
+
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+  </div>
+    </div>
+
+  </div>
+  
+    <div id="head-padding"></div>
+
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+</footer>
+ 
+
+
+ <!-- CHANGES -->
+<script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+<script type="text/javascript">
+ var slideIndex = [1,1];
+/* Class the members of each slideshow group with different CSS classes */
+var slideId = ["mySlides1", "mySlides2"];
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>

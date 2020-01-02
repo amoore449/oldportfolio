@@ -1,0 +1,136 @@
+
+/*------------------------------------------------------------*/
+#roboother{
+  color:#fff;
+  padding: 20px;
+}
+#over0, #over1, #over2, #over3, #over4, #over5{
+  box-sizing: border-box;
+  max-width: 33.33%;
+  width: 100%;
+  color: #ffff; 
+  display: inline;
+  z-index: 120;
+  -ms-flex: 20%; 
+  flex: 20%;
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+
+}
+#roboother{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+
+#mysubtitle{
+  font-size: 19px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+#head-padding{
+  padding: 14px;
+}
+
+.sixth{
+  float:left;
+  width: 16.6666%;
+}
+@media (max-width:601px){
+  .sixth{
+  float:left;
+  width: 100%;
+  }#mysubtitle{
+  font-size: 19px;
+  margin-left: 5%;
+  margin-right: 5%;
+    }
+}
+#headertext{
+background-color:#f1f1f1;
+color: #000;
+width: 100%;
+font-size: 30px;
+padding-top: 40px;
+padding-bottom: 40px;
+  }
+#myname{
+  font-weight: bold;
+}
+#mytitle{
+  font-weight: bold;
+  font-size: 34px;
+}
+#profilepic{
+  border-radius: 50%;
+}
+.top-padding-24{
+  padding-top:24px!important;
+}
+#robo2015, #robo2016, #robo2017, #robo2018{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle; align-content: left;}
+
+/* Slideshow container */
+.slideshow-container {
+ float:left;
+ width: 100%;
+ position: relative;
+
+}
+
+
+h4{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media (max-width:601px){
+.slideshow-container {
+  width: 100%;
+  position: relative;
+}
+#robodes{
+  float:left;
+  width:100%;
+  text-align: center;
+}
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}

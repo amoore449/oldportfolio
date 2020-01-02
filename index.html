@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<title>Allison Moore's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style2.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+
+
+
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+  <!-- Header -->
+  <header class="w3-xlarge top-padding-24">
+        <a href="#about" class="w3-right w3-button w3-white">About</a>
+      <a href="index.html" class="w3-right w3-button w3-white">Home</a>
+      <br/><br/>
+     <div class="w3-center" id="headertext"><div id="myname">Hi! My name is Allison Moore.</div> 
+      These are some projects I've worked on.</div>
+  </header>
+
+  <div id="head-padding"></div>
+
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <!--frc robotics-->
+    <div class="sixth">
+      <div class="card">
+          <div class="front">
+              <img id="robohead" src="Pictures/RoboHead-square.png" style="width:100%;border-radius: 50%;">
+          </div>
+
+          <div id="frcback" class="back">
+            <div class="back-background">FRC Robotics</div>
+          </div>
+      </div>
+    </div>
+    <!--hp labs-->
+    <div class="sixth">
+       <div class="card">
+          <div class="front">
+            <img id="HPLabs"src="Pictures/HPLabs-square.png" style="width:100%;border-radius: 50%;">
+       </div>
+        <div id="hplabsback" class="back">
+            <div class="back-background">HP Labs</div>
+          </div>
+        </div>
+    </div>
+    <!--recentcad-->
+    <div class="sixth">
+      <div class="card">
+          <div class="front">
+             <img id="RecentCAD" src="Pictures/RecentCAD-square.png" style="width:100%;border-radius: 50%;">
+       </div>
+        <div id="cadback" class="back">
+            <div class="back-background">Recent CAD</div>
+          </div>
+        </div>
+    </div>
+    <!--otherrobotics-->
+    <div class="sixth">
+       <div class="card">
+          <div class="front">
+              <img id="OtherRobotics" src="Pictures/OtherRobotics-square.png" style="width:100%;border-radius: 50%;">
+       </div>
+        <div id="otherroboback" class="back">
+            <div class="back-background">Other Robotics</div>
+          </div>
+        </div>
+    </div>
+     <!--webprogramming-->
+     <div class="sixth">
+        <div class="card">
+          <div class="front">
+              <img src="Pictures/WebProgramming-square.png" style="width:100%;border-radius: 50%;">
+       </div>
+        <div id="webback" class="back">
+            <div class="back-background">Web Design</div>
+          </div>
+        </div>
+    </div>
+    <!--engineeringeducation-->
+    <div class="sixth">
+        <div class="card">
+          <div class="front">
+             <img src="Pictures/EnginEdu-square.png" style="width:100%;border-radius: 50%;">
+       </div>
+        <div id="eduback" class="back">
+            <div class="back-background">Engineering<br/>Education</div>
+          </div>
+        </div>
+       
+     </div>
+  </div>
+  
+    <div id="head-padding"></div>
+<div id="frcrobotics">
+
+
+
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+  <h2>About</h2>
+  <img src="Pictures/profilepic.jpg" class="w3-image w3-padding-32" id="profilepic" width="300" height="300">
+  <form style="margin:auto;width:60%" action="mailto:moore.m.allison@gmail.com" method="post" enctype="text/plain">
+    <p>Hi! I'm Allison. I am a sophomore Mechanical Engineering student at Tufts University. I am particularly interested in 3D modeling and printing, so love working on projects that involve any combination thereof. </p>
+  <br>
+  <p>Format Reference <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+
+
+ <!-- CHANGES -->
+<script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.card').each(function(){
+    $(this).flip({
+      axis: "y", // y or x
+      reverse: false, // true and false
+      trigger: "hover", // click or hover
+      front: $(this).children('.front'),
+      back: $(this).children('.back'),
+      autoSize: false
+    });
+  });
+
+   $("#frcback").click(function(){
+      //this will redirect us in same window
+      document.location.href = "frcrobotics.html";
+   });
+
+     $("#cadback").click(function(){
+      //this will redirect us in same window
+      document.location.href = "recentcad.html";
+   });
+     $("#hplabsback").click(function(){
+      //this will redirect us in same window
+      document.location.href = "hplabs.html";
+   });
+     $("#otherroboback").click(function(){
+      //this will redirect us in same window
+      document.location.href = "otherrobotics.html";
+   });
+      $("#otherroboback").click(function(){
+      //this will redirect us in same window
+      document.location.href = "otherrobotics.html";
+   });
+       $("#webback").click(function(){
+      //this will redirect us in same window
+      document.location.href = "webprogramming.html";
+   });
+       $("#eduback").click(function(){
+      //this will redirect us in same window
+      document.location.href = "education.html";
+   });
+  
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Allison Moore's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="otherrobotics.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+
+
+
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+  <!-- Header -->
+  <header class="w3-xlarge top-padding-24">
+        <a href="#about" class="w3-right w3-button w3-white">About</a>
+      <a href="index.html" class="w3-right w3-button w3-white">Home</a>
+      <br/><br/>
+     <div class="w3-center" id="headertext"><div id="myname">Hi! My name is Allison Moore.</div> 
+      These are some projects I've worked on.</div>
+  </header>
+
+  <div id="head-padding"></div>
+
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <!--frc robotics-->
+    <div class="w3-half">
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <div id="roboother">
+    <h1>2019</h1>
+    <h2>Trinity Firefighting</h2>
+    <h4>In Winter 2019, I worked with a partner to create the mechanical design aspects of a robot that could track and blow out flames for the Trinity Fire Fighting Robotics Competition.</h4>
+  </div>
+            <img id="trinitypic" src="Pictures/trinity32-dark.jpg" style="width:100%">
+          </div>
+          <div class="mySlides1">
+           <video style="width:100%" controls>
+           <source src="Videos/trinityvid32.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+         </div>
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
+</div>
+    <!--hp labs-->
+    <div class="w3-half">
+       <div class="slideshow-container">
+          <div class="mySlides2">
+            <div id="roboother">
+            <h1>2019</h1>
+            <h2>Battle Bot</h2>
+            <h4>As a short project this fall, I worked with a team of four to create a battlebot from scratch to fight robots built by other students at Tufts University. I CADed, 3D printed, laser cut, and assembled the mechanical aspects of this robot.</h4>
+            </div>
+            <img id="HPLabs"src="Pictures/battle32-dark.jpg" style="width:100%;">
+          </div>
+          <div class="mySlides2">
+           <video style="width:100%" controls>
+           <source src="Videos/barf32.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+         </div>
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+  </div>
+    </div>
+
+  </div>
+  
+    <div id="head-padding"></div>
+
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+</footer>
+ 
+
+
+ <!-- CHANGES -->
+<script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+<script type="text/javascript">
+ var slideIndex = [1,1];
+/* Class the members of each slideshow group with different CSS classes */
+var slideId = ["mySlides1", "mySlides2"];
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>

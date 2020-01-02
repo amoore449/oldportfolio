@@ -1,0 +1,79 @@
+#over0, #over1, #over2, #over3, #over4, #over5{
+  box-sizing: border-box;
+  max-width: 33.33%;
+  width: 100%;
+  color: #ffff; 
+  display: inline;
+  z-index: 120;
+  -ms-flex: 20%; 
+  flex: 20%;
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+
+}
+
+.flip .back {
+    background: #2184cd;
+    color: #fff;
+    text-align: center;
+}
+
+.back-background{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  padding: 50% 0;
+  border-radius: 50%;
+  background: #000;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+#mysubtitle{
+  font-size: 19px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+#head-padding{
+  padding: 14px;
+}
+
+.sixth{
+  float:left;
+  width: 16.6666%;
+}
+@media (max-width:601px){
+  .sixth{
+  float:left;
+  width: 100%;
+  }
+  #mysubtitle{
+  font-size: 19px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+}
+#headertext{
+background-color:#f1f1f1;
+color: #000;
+width: 100%;
+font-size: 30px;
+padding-top: 40px;
+padding-bottom: 40px;
+  }
+#myname{
+  font-weight: bold;
+}
+#mytitle{
+  font-weight: bold;
+  font-size: 34px;
+}
+#profilepic{
+  border-radius: 50%;
+}
+.top-padding-24{
+  padding-top:24px!important;
+}
