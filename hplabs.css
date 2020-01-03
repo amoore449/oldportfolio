@@ -60,7 +60,7 @@ width:100%;
     margin: 0;
   }
 #low-fid{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Pictures/low-fid.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Pictures/Low-fid.jpg");
     background-size: cover;
 }
 #study{
