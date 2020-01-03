@@ -38,15 +38,15 @@ body {font-family: "Raleway", Arial, sans-serif}
   <div class="w3-row">
     <!--frc robotics-->
     <div class="w3-third">
-            <div id="ideation" class="back-background"><h2 id="ideationtxt">IDEATION</h2></div>
+            <div id="ideation" class="back-background"><h2 id="ideationtxt">IDEATION<br/>&#9661;</h2></div>
     </div>
     <!--hp labs-->
     <div class="w3-third">
-            <div id="low-fid" class="back-background"><h2 id="ideationtxt">LOW-FIDELITY MODELS</h2></div>
+            <div id="low-fid" class="back-background"><h2 id="ideationtxt">LOW-FIDELITY MODELS<br/>&#9661;</h2></div>
     </div>
     <!--recentcad-->
     <div class="w3-third">
-             <div id="study" class="back-background"><h2 id="ideationtxt">CONSUMER STUDIES</h2></div>
+             <div id="study" class="back-background"><h2 id="ideationtxt">CONSUMER STUDIES<br/>&#9661;</h2></div>
     </div>
   </div>
    <div id="head-padding"></div>
@@ -90,21 +90,39 @@ body {font-family: "Raleway", Arial, sans-serif}
           </div>
           </div>
     </div>
-<div id="marker"></div>
+  <div id="head-padding5"></div>
 <!--STUDY PROTOTYPES-->
 <div id="part2header" class="w3-padding-24 w3-dark-grey w3-center collapsible">STUDY PROTOTYPES<br/>&#9661;</div>
 <div class="w3-container w3-light-grey" id="part2">
     <div class="w3-third">
+      <div class="content">
       <img src="Pictures/HP/Picture18.jpg" style="width:100%; padding: 2%;">
+      <p>Fabric Print Shoes and Shoe Soles</p>
+    </div>
+    <div class="content">
       <img src="Pictures/HP/Picture16.jpg" style="width:100%; padding: 2%;">
+      <p>3D Print Pins and Studs</p>
+    </div>
     </div>   
     <div class="w3-third">
+      <div class="content">
       <img src="Pictures/HP/Picture23.jpg" style="width:100%; padding: 2%;">
+      <p>Custom Print Book Charms</p>
+    </div>
+    <div class="content">
       <img src="Pictures/HP/Picture21.jpg" style="width:100%; padding: 2%;">
+      <p>3D Print Custom Buttons</p>
+    </div>
     </div>  
     <div class="w3-third">
+      <div class="content">
       <img src="Pictures/HP/Picture24.jpg" style="width:100%; padding: 2%;">
+      <p>Fabric Print Watch Bands</p>
+    </div>
+    <div class="content">
       <img src="Pictures/HP/Picture22.jpg" style="width:100%; padding: 2%;">
+      <p>3D Print Watch Covers</p>
+    </div>
     </div>  
 </div>
 
@@ -162,7 +180,7 @@ $(document).ready(function(){
 });
 
    $("#ideation").click(function(){
-    document.location.href = "#marker";
+    document.location.href = "#head-padding5";
 
     $("#extra-study").slideUp(500, function() {
         $("#extra-idea").delay(300).slideDown(800);
@@ -177,7 +195,7 @@ $(document).ready(function(){
 
 
    $("#low-fid").click(function(){
-    document.location.href = "#descriptxt";
+    document.location.href = "#head-padding5";
 
     $("#extra-study").slideUp(500, function() {
         $("#extra-lowfid").delay(300).slideDown(800);
@@ -190,7 +208,7 @@ $(document).ready(function(){
   });
 
    $("#study").click(function(){
-    document.location.href = "#descrip";
+    document.location.href = "#head-padding5";
 
       $("#extra-lowfid").slideUp(500, function() {
         $("#extra-study").delay(300).slideDown(800);
