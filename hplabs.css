@@ -29,7 +29,7 @@
 #descriptxt{
 width:100%;
   float: left;
-  padding: 10%;
+  padding: 20%;
 }
 .container:after{
   background-color: #202020;
@@ -60,10 +60,17 @@ width:100%;
     margin: 0;
   }
 #low-fid{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Pictures/Low-fid.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Pictures/low-fid.jpg");
     background-size: cover;
 }
 #study{
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Pictures/study.jpg");
     background-size: cover;
+}
+.content {
+  background-color: #000;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+
 }
