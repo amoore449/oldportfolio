@@ -38,6 +38,11 @@
   float:left;
   width: 16.6666%;
 }
+@media (max-width:1500px){
+  h4{
+    font-size:16px;
+  }
+}
 @media (max-width:601px){
   .sixth{
   float:left;
