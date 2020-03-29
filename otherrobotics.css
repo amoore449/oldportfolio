@@ -23,8 +23,22 @@
   width: 100%;
   text-align: center;
 }
+@media (max-width:601px){
+  h1{
+  font-size: 20px;
+}
+ h2{
+  font-size: 15px;
+}
+ h4{
+  font-size:12px;
+}
+#roboother{
+  color:#fff;
+  padding: 25px;
+}
 
-
+}
 #mysubtitle{
   font-size: 19px;
   margin-left: 15%;
@@ -38,16 +52,15 @@
   float:left;
   width: 16.6666%;
 }
-@media (max-width:1500px){
-  h4{
-    font-size:16px;
-  }
-}
-@media (max-width:601px){
+@media (max-width:1000px){
   .sixth{
   float:left;
   width: 100%;
-  }#mysubtitle{
+  }
+  .w3-half{
+    width: 100%;
+  }
+  #mysubtitle{
   font-size: 19px;
   margin-left: 5%;
   margin-right: 5%;
@@ -97,7 +110,7 @@ h4{
   margin-right: 5%;
 }
 
-@media (max-width:1000px){
+@media (max-width: 2000px){
 .slideshow-container {
   width: 100%;
   position: relative;
