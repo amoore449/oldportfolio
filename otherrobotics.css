@@ -92,7 +92,7 @@ h4{
   margin-right: 5%;
 }
 
-@media (max-width:601px){
+@media (max-width:1000px){
 .slideshow-container {
   width: 100%;
   position: relative;
