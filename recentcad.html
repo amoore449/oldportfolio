@@ -35,7 +35,7 @@ body {font-family: "Raleway", Arial, sans-serif}
 
   <!-- Photo Grid -->
 <div class="row">
-  <div class="column-half">
+  <div class="column-third">
     <div class="content">
        <div class="slideshow-container">
          <div class="mySlides1">
@@ -58,8 +58,8 @@ body {font-family: "Raleway", Arial, sans-serif}
       <p>Animation created and rendered in 3Ds Max using a Biped skeleton for character movement. All models for this animation were built in Inventor.</p>
     </div>
   </div>
-  <div class="column-divider-half"><br/></div>
-  <div class="column-half">
+  <div class="column-divider-third"><br/></div>
+  <div class="column-third">
        <div class="content">
         <div class="slideshow-container">
         <div class="mySlides2">
@@ -84,6 +84,32 @@ body {font-family: "Raleway", Arial, sans-serif}
       <h3>Tufts AR</h3>
       <p>I built an Augmented Reality (AR) Unity app mapping the Tufts University campus over 24 hours at Tufts Polyhacks 2019 with a 5 person team. Users could leave reviews to appear alongside CAD building models in the app. I created 3D building models in Autodesk Fusion and built the website in HTML/CSS. This project won the Trip Advisor award for best use of Travel API.</p>
       <a href="https://bit.ly/393Y2rh">Project Presentation</a>
+    </div>
+  </div>
+    <div class="column-third">
+       <div class="content">
+        <div class="slideshow-container">
+        <div class="mySlides6">
+            <img src="Pictures/CAD/deik1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides6">
+          <img src="Pictures/CAD/deik2.jpg" style="width:100%">
+        </div>
+         <div class="mySlides6">
+          <img src="Pictures/CAD/deik3.jpg" style="width:100%">
+        </div>
+         <div class="mySlides6">
+          <img src="Pictures/CAD/deik3.jpg" style="width:100%">
+        </div>
+          <div class="mySlides6">
+          <img src="Pictures/CAD/deik4.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+      </div>
+  
+      <h3>Teardown of DEIK Electric Wine Opener</h3>
+      <p>Dissassembled and CAD modeled the components of a DEIK wine opener with a team of four in Solidworks.</p>
     </div>
   </div>
 </div>
@@ -194,14 +220,15 @@ body {font-family: "Raleway", Arial, sans-serif}
 <script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
 <script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
 <script type="text/javascript">
- var slideIndex = [1,1,1,1,1];
+ var slideIndex = [1,1,1,1,1,1];
 /* Class the members of each slideshow group with different CSS classes */
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"];
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
 showSlides(1, 3);
 showSlides(1, 4);
+showSlides(1, 5);
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
