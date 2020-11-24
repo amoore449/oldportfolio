@@ -27,11 +27,72 @@ body {font-family: "Raleway", Arial, sans-serif}
         <a href="index.html#about" class="w3-right w3-button w3-white">About</a>
       <a href="index.html" class="w3-right w3-button w3-white">Home</a>
       <br/><br/>
-     <div class="w3-center" id="headertext"><div id="mytitle">FRC Robotics</div> <div id="mysubtitle">
-      Between 2015 and 2018, I built and designed 120-lb robots over annual 6-week “build seasons” with a team of around 20 other students at my high school for the First Robotics Competition (FRC).</div></div>
+     <div class="w3-center" id="headertext"><div id="mytitle">Robotics</div> <div id="mysubtitle">
+      Between 2015 and 2018, I built and designed 120-lb robots over annual 6-week “build seasons” with a team of around 20 other students at my high school
+       for the First Robotics Competition (FRC).
+       Since then, I have created a variety of smaller scale robots with an empathsis on sensors, laser cutting, and 3D printing.
+ </div></div>
+
   </header>
 
   <div id="head-padding"></div>
+
+  <!--Trinityrobo-->
+  <div id="robo2015">
+     <div id="head-padding"></div>
+  <div class="w3-container w3-dark-grey top-padding-24 w3-center">
+    </div>
+     <div id="head-padding"></div>
+
+  <div class="w3-container w3-light-grey">
+    <div class="slideshow-container">
+      <div class="mySlides5">
+          <img id="trinitypic" src="Pictures/trinity32-dark.jpg" style="width:100%">
+      </div>
+      <div class="mySlides5">
+           <video style="width:100%" controls>
+           <source src="Videos/trinityvid32.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+    </div>
+    <div id="robodes">
+      <h1>2019</h1>
+      <h2>Trinity Firefighting</h2>
+      <h4>In Winter 2019, I worked with a partner to create the mechanical design aspects of a robot that could track and blow out flames for the Trinity Fire Fighting Robotics Competition.</h4>
+    </div>
+  </div>
+  </div>
+
+    <!--BARTrobo-->
+    <div id="robo2015">
+       <div id="head-padding"></div>
+    <div class="w3-container w3-dark-grey top-padding-24 w3-center">
+      </div>
+       <div id="head-padding"></div>
+
+    <div class="w3-container w3-light-grey">
+      <div class="slideshow-container">
+        <div class="mySlides6">
+              <img id="HPLabs"src="Pictures/battle32-dark.jpg" style="width:100%;">
+        </div>
+        <div class="mySlides6">
+             <video style="width:100%" controls>
+             <source src="Videos/barf32.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+      </div>
+      <div id="robodes">
+           <h1>2019</h1>
+          <h2>Battle Bot</h2>
+          <h4>As a short project this fall, I worked with a team of four to create a battlebot from scratch to fight robots built by other students at Tufts University. I CADed, 3D printed, laser cut, and assembled the mechanical aspects of this robot.</h4>
+    </div>
+    </div>
 
 <!--2018robo-->
 <div id="robo2018">
@@ -143,6 +204,9 @@ body {font-family: "Raleway", Arial, sans-serif}
   </div>
 </div>
 </div>
+
+
+</div>
 <!-- End Page Content -->
 </div>
 
@@ -151,20 +215,22 @@ body {font-family: "Raleway", Arial, sans-serif}
 <footer class="w3-dark-grey w3-padding-64 w3-center" id="about">
 
 </footer>
- 
+
 
 
  <!-- CHANGES -->
 <script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
 <script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
 <script type="text/javascript">
- var slideIndex = [1,1,1,1];
+ var slideIndex = [1,1,1,1,1,1];
 /* Class the members of each slideshow group with different CSS classes */
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"];
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
 showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);

@@ -49,7 +49,7 @@ h1 {
 }
 
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
@@ -130,4 +130,16 @@ img {vertical-align: middle;}
 .prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
+}
+
+.column-third{
+    float: left;
+    width: 30%;
+}
+
+@media (max-width: 600px){
+.column-third {
+    float: left;
+    width: 100%;
+}
 }

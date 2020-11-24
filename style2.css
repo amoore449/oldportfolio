@@ -2,10 +2,10 @@
   box-sizing: border-box;
   max-width: 33.33%;
   width: 100%;
-  color: #ffff; 
+  color: #ffff;
   display: inline;
   z-index: 120;
-  -ms-flex: 20%; 
+  -ms-flex: 20%;
   flex: 20%;
   position: absolute;
   text-align: center;
@@ -48,8 +48,13 @@
   float:left;
   width: 16.6666%;
 }
+.fifth{
+  float:left;
+  width: 20%;
+}
+
 @media (max-width:601px){
-  .sixth{
+  .fifth, .sixth{
   float:left;
   width: 100%;
   }
