@@ -12,8 +12,102 @@
 <script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
 
 <style>
-body {font-family: "Raleway", Arial, sans-serif}
-.w3-row img {margin-bottom: -8px}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
 </style>
 
 
@@ -27,10 +121,12 @@ body {font-family: "Raleway", Arial, sans-serif}
         <a href="index.html#about" class="w3-right w3-button w3-white">About</a>
       <a href="index.html" class="w3-right w3-button w3-white">Home</a>
       <br/><br/>
-    <div class="w3-center" id="headertext"><div id="mytitle">HP Labs</div> <div id="mysubtitle">
-     In 2017, I interned with the Immersive Experiences Lab (IXL) to study the applications of 3D printing and customization in clothing. Over the summer, I developed prototype customizable objects and conducted a qualitative study on user reactions. I also worked independently on a project exploring the idea of comfort/nonverbal communication through wearable technology.</div>
+    <div class="w3-center" id="headertext"><div id="mytitle">Researh</div> <div id="mysubtitle">
+     Currently, I research human robot interaction with the <a href="https://aabl.cs.tufts.edu/"  target="_blank">Tufts Assistive Agent Behavior and Learning Lab</a> (AABL).
+In 2019, I researched on soft robotics and silicon 3D printing with the Tufts Exosuit and Soft Robotics team. In 2017, I researched customization thorugh 3D printing with the the <a href="https://www8.hp.com/us/en/hp-labs/innovation-journal-issue5/innovation-spotlight.html"  target="_blank">IXL</a> team at HP Labs.</div>
    </div>
   </header>
+
 
   <div id="head-padding"></div>
 
@@ -38,28 +134,57 @@ body {font-family: "Raleway", Arial, sans-serif}
   <div class="w3-row">
     <!--frc robotics-->
     <div class="w3-third">
-            <div id="ideation" class="back-background"><h2 id="ideationtxt">IDEATION<br/>&#9661;</h2></div>
+            <div id="ideation" class="back-background"><h2 id="ideationtxt">HP LABS<br/>&#9661;</h2></div>
     </div>
     <!--hp labs-->
     <div class="w3-third">
-            <div id="low-fid" class="back-background"><h2 id="ideationtxt">LOW-FIDELITY MODELS<br/>&#9661;</h2></div>
+            <div id="low-fid" class="back-background"><h2 id="ideationtxt">Soft Robotics<br/>&#9661;</h2></div>
     </div>
     <!--recentcad-->
     <div class="w3-third">
-             <div id="study" class="back-background"><h2 id="ideationtxt">CONSUMER STUDIES<br/>&#9661;</h2></div>
+             <div id="study" class="back-background"><h2 id="ideationtxt">AABL<br/>&#9661;</h2></div>
     </div>
   </div>
    <div id="head-padding"></div>
 <!--IDEATION-->
     <div class="w3-container w3-dark-grey" id="extra-idea">
       <div id="back-arrow" class="w3-padding-24 w3-center">CLOSE</div>
-        <div class="photo-half">
+      <!--  <div class="photo-half">
           <img src="Pictures/HP/idehoto.png" style="width:100%; padding: 2%;">
+     </div>-->
+
+ <div class="photo-half">
+       <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="Pictures/HP/Picture20.png" style="width:100%">
         </div>
+        <div class="mySlides fade">
+          <img src="Pictures/HP/1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="Pictures/HP/2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="Pictures/HP/3.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="Pictures/HP/4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="Pictures/HP/5.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="Pictures/HP/6.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      </div>
+
           <div id="descrip">
            <div id ="descriptxt">
-               <h1>Ideation and Case Studies</h1>
-                <h4>Conducted several case studies to investigate how individuals used existing clothing options/customization to express themselves.</h4>
+               <h1>HP Labs</h1>
+                <h4>In 2017, I interned with the Immersive Experiences Lab (IXL) to study the applications of 3D printing and customization in clothing. Over the summer, I developed prototype customizable objects and conducted a qualitative study on user reactions. I also worked independently on a project exploring the idea of comfort/nonverbal communication through wearable technology</h4>
           </div>
           </div>
       <div id="head-padding"></div>
@@ -69,12 +194,37 @@ body {font-family: "Raleway", Arial, sans-serif}
     <div class="w3-container w3-dark-grey" id="extra-lowfid">
       <div id="back-arrow2" class="w3-padding-24 w3-center">CLOSE</div>
         <div class="photo-half">
-          <img src="Pictures/HP/fidhoto.png" style="width:100%; padding: 2%;">
+              <div class="vertical-center">
+                  <div class="slideshow-container">
+                   <div class="mySlides2">
+                      <video style="width:100%" controls>
+                       <source src="Pictures/HP/boomb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                   </video>
+                   </div>
+                   <div class="mySlides2">
+                     <img src="Pictures/HP/act.png" style="width:100%">
+                   </div>
+                   <div class="mySlides2">
+                     <img src="Pictures/HP/softrobo.jfif" style="width:100%">
+                   </div>
+                   <div class="mySlides2">
+                     <img src="Pictures/HP/softrobo2.jfif" style="width:100%">
+                   </div>
+                   <div class="mySlides2">
+                    <img src="Pictures/HP/silicon.jpeg" style="width:100%">
+                  </div>
+                   <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                   <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                 </div>
+            </div>
         </div>
           <div id="descrip">
            <div id ="descriptxt">
-               <h1>Low-Fidelity Models</h1>
-                <h4>Created Mock-Ups of customizable printed clothing concepts based on case studies.</h4>
+               <h1>Soft Robotic Exosuit and Silicon 3D Printer</h1>
+                <h4>In 2019, I worked on soft robotic grippers and on redesigning a silicon 3D printer with the Tufts Soft Robotics Exosuit Research team.
+                     I modeled and fabricated several different designs for silicon actuators to allow better airflow for a soft robotic exosuit gripper using CAD, laser cutting, and silicon mold casting.
+                     I also improved the control board design and mapped electronics on fritzing. I improved the team's silicon 3D printer design and build a new attachment for the print extruder.</h4>
           </div>
           </div>
       <div id="head-padding"></div>
@@ -82,19 +232,45 @@ body {font-family: "Raleway", Arial, sans-serif}
 <!--HIGH FID-->
 <div class="w3-container w3-dark-grey" id="extra-study">
       <div id="back-arrow3" class="w3-padding-24 w3-center">CLOSE</div>
-        <div class="photo-half">
-          <img src="Pictures/HP/highhoto.png" style="width:100%; padding: 2%;">
-        </div>
+      <div class="photo-half">
+            <div class="vertical-center">
+               <div class="slideshow-container">
+                 <div class="mySlides3">
+                   <img src="Pictures/aabl1.png" style="width:100%">
+                 </div>
+                 <div class="mySlides3">
+                   <img src="Pictures/aabl2.png" style="width:100%">
+                 </div>
+
+                 <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                 <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+               </div>
+          </div>
+      </div>
           <div id="descrip">
            <div id ="descriptxt">
-               <h1>Consumer Study</h1>
-                <h4>Refined Low-Fidelity models into custom printed buttons, watches, and jewelry used in a user study to measure participant reactions to printed and 3D printed customizable fashion.</h4>
+               <h1>AABL: Assistive Agent Behavior and Learning Lab</h1>
+                <h4>The <a href="https://aabl.cs.tufts.edu/"  target="_blank">AABL</a> Lab is focused on designing new algorithms for human robot interaction to make robots more helpful.
+                     Right now, I am specifically researching scaffolded shared autonomy in educational robotics and robot motion planning.
+                     I also assist with robot maintenance and lab upkeep/publicity.
+ </h4>
           </div>
           </div>
   <div id="head-padding"></div>
     </div>
   <div id="head-padding5"></div>
-<!--STUDY PROTOTYPES-->
+
+  <!-- Slideshow container -->
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<!--STUDY PROTOTYPES
 <div id="part2header" class="w3-padding-24 w3-dark-grey w3-center collapsible">STUDY PROTOTYPES<br/>&#9661;</div>
 <div class="w3-container w3-light-grey" id="part2">
     <div class="w3-third">
@@ -106,7 +282,7 @@ body {font-family: "Raleway", Arial, sans-serif}
       <img src="Pictures/HP/Picture16.jpg" style="width:100%; padding: 2%;">
       <p>3D Print Pins and Studs</p>
     </div>
-    </div>   
+    </div>
     <div class="w3-third">
       <div class="content">
       <img src="Pictures/HP/Picture23.jpg" style="width:100%; padding: 2%;">
@@ -116,7 +292,7 @@ body {font-family: "Raleway", Arial, sans-serif}
       <img src="Pictures/HP/Picture21.jpg" style="width:100%; padding: 2%;">
       <p>3D Print Custom Buttons</p>
     </div>
-    </div>  
+    </div>
     <div class="w3-third">
       <div class="content">
       <img src="Pictures/HP/Picture24.jpg" style="width:100%; padding: 2%;">
@@ -126,17 +302,17 @@ body {font-family: "Raleway", Arial, sans-serif}
       <img src="Pictures/HP/Picture22.jpg" style="width:100%; padding: 2%;">
       <p>3D Print Watch Covers</p>
     </div>
-    </div>  
-</div>
+    </div>
+</div>-->
 
 <div id="head-padding"></div>
-<!--FINAL RESULTS-->
+<!--FINAL RESULTS
 <div id="part3header" class="w3-padding-24 w3-dark-grey w3-center collapsible">FINAL RESULTS<br/>&#9661;</div>
 <div class="w3-container w3-light-grey" id="part3">
   <div class="w3-full">
     <img src="Pictures/HP/Picture20.png" style="width:100%; padding: 2%;">
   </div>
-</div>
+</div>-->
 
 
 <div id="head-padding"></div>
@@ -150,14 +326,46 @@ body {font-family: "Raleway", Arial, sans-serif}
 <!-- Footer / About Section -->
 <footer class="w3-light-grey w3-padding-64 w3-center" id="about">
 </footer>
- 
+
 
 
  <!-- CHANGES -->
 <script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
 <script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+
+
+
+<script>
+var slideIndex = [1,1,1];
+var slideId = ["mySlides", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+
+
 <script type="text/javascript">
+
+
 $(document).ready(function(){
+
+
+
   $(function() {
   $('#ideation').hover(function() {
     $(this).fadeTo(400,.6);
@@ -194,7 +402,7 @@ $(document).ready(function(){
     });
 
   });
- 
+
 
 
    $("#low-fid").click(function(){
@@ -249,6 +457,13 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 });
+
+</script>
+<!-- CHANGES -->
+<script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+<script type="text/javascript">
+
 </script>
 </body>
 </html>

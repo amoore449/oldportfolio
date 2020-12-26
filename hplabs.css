@@ -8,13 +8,29 @@
   background: #000;
   text-align: center;
   color: #fff;
-  
+
 }
+
 #back-arrow, #back-arrow2,#back-arrow3 {
   background-color: #000;
   margin:0;
   padding: 0;
 }
+.photo-half{
+  float:left;
+ width: 49.9%;
+ position: relative;
+}
+
+.photo-half {
+    float: left;
+    width: 49.9%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    position: relative;
+}
+
 #descrip{
   float:left;
  width: 49.9%;
@@ -29,8 +45,33 @@
 #descriptxt{
 width:100%;
   float: left;
-  padding: 20%;
+  padding: 10%;
 }
+@media only screen and (max-width: 800px) {
+     #descriptxt {
+         width: 100%;
+         float: left;
+         padding: 8%;
+     }
+
+     #descrip {
+    float: left;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.photo-half {
+    float: left;
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    position: relative;
+}
+
+}
+
 .container:after{
   background-color: #202020;
   width:100%;
@@ -49,22 +90,18 @@ width:100%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.photo-half{
-  float:left;
- width: 49.9%;
- position: relative;
-}
+
 #extra-idea, #extra-study, #extra-lowfid, #part2,#part3{
     display:none;
     padding: 0;
     margin: 0;
   }
 #low-fid{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Pictures/Low-fid.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Pictures/exo.jpg");
     background-size: cover;
 }
 #study{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Pictures/study.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Pictures/HP/moe.jpg");
     background-size: cover;
 }
 .content {
