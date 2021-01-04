@@ -37,6 +37,44 @@ body {font-family: "Raleway", Arial, sans-serif}
 
   <div id="head-padding"></div>
 
+  <!--Robotics Study-->
+  <div id="robo2015">
+     <div id="head-padding"></div>
+  <div class="w3-container w3-dark-grey top-padding-24 w3-center">
+    </div>
+     <div id="head-padding"></div>
+
+  <div class="w3-container w3-light-grey">
+    <div class="slideshow-container">
+         <div class="mySlides7">
+            <img id="trinitypic" src="Pictures/HRI/robot.png" style="width:100%">
+        </div>
+        <div class="mySlides7">
+           <img id="trinitypic" src="Pictures/HRI/robot2.png" style="width:100%">
+       </div>
+      <div class="mySlides7">
+          <img id="trinitypic" src="Pictures/HRI/essay.png" style="width:100%">
+      </div>
+      <div class="mySlides7">
+          <img id="trinitypic" src="Pictures/HRI/flowchart.png" style="width:100%">
+      </div>
+      <div class="mySlides7">
+          <img id="trinitypic" src="Pictures/HRI/flowchart.png" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+    </div>
+    <div id="robodes">
+      <h1>2020</h1>
+      <h2>CHORE robot</h2>
+      <h4>I conducted a premilinary study on different policy shaping algorithms for cleaning robots adapting to different household social dynamics. The goal of this study was to tailor the
+      behavior of household cleaning robots to both appease indivdual users within the house and to synchronize well with household dynamics overall. We tested four different hierarchical policy shaping algorithms in an
+online study to determine what robot response would be viewed as socially appropriate by users.  </h4>
+    </div>
+  </div>
+  </div>
+
   <!--Trinityrobo-->
   <div id="robo2015">
      <div id="head-padding"></div>
@@ -222,15 +260,16 @@ body {font-family: "Raleway", Arial, sans-serif}
 <script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
 <script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
 <script type="text/javascript">
- var slideIndex = [1,1,1,1,1,1];
+ var slideIndex = [1,1,1,1,1,1,1];
 /* Class the members of each slideshow group with different CSS classes */
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7"];
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
 showSlides(1, 3);
 showSlides(1, 4);
 showSlides(1, 5);
+showSlides(1, 6);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
