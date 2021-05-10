@@ -12,6 +12,26 @@
   font-size: 24px;
 
 }
+.myButton_boop {
+     background-color:#d1d1d1;
+     border-radius:4px;
+     display:inline-block;
+     cursor:pointer;
+     color:#ffffff;
+     font-size:19px;
+     padding:12px 18px;
+     text-decoration:none;
+}
+.myButton_boop:hover {
+	background-color:#bcbdbb;
+}
+.myButton_boop:active {
+	position:relative;
+	top:1px;
+}
+
+
+
 #descripofme{
   padding-left: 20%;
   padding-right: 20%;
