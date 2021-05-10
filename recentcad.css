@@ -49,7 +49,7 @@ h1 {
 }
 
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
