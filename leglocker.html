@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+   <title>Allison Moore's Portfolio</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="style2.css">
+   <link rel="stylesheet" href="otherrobotics.css">
+   <link rel="stylesheet" href="stylerobo.css">
+   <link rel="stylesheet" href="leg.css">
+   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
+   <script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+   <style>
+      body {
+      font-family: "Raleway", Arial, sans-serif
+      }
+      .w3-row img {
+      margin-bottom: -8px
+      }
+   </style>
+   <body>
+      <!-- !PAGE CONTENT! -->
+      <div class="w3-content" style="max-width:1500px">
+      <!-- Header -->
+      <header class="w3-xlarge top-padding-24">
+         <a href="index.html#about" class="w3-right w3-button w3-white">About</a> <a href="index.html" class="w3-right w3-button w3-white">Home</a>
+         <br/>
+         <br/>
+         <div class="w3-center" id="headertext">
+            <div id="mytitle">Leg Locker</div>
+            <div id="mysubtitle"> For my 2021 Senior Design Project, I worked on creating a storage space within prothetic legs. Our work was centered around the concept of "What can a prosthetic do that your legs can’t?" and explored ways the abilities of prosthetics extend beyond that of biological legs. </div>
+         </div>
+      </header>
+      <!-- End of Header-------------------------------->
+      <div id="head-padding"></div>
+      <div id="robo2015">
+      <div id="head-padding"></div>
+      <div class="row w3-container">
+         <div class="w3-half"> <img class="medpic" src="LegLock/david_moun.jpg"> </div>
+         <div class="right_buffer w3-container w3-half">
+            <div class="divide_buffer">
+               <h2 class="align_right">A Prosthetic with <b>Pockets</b></h2>
+            </div>
+            <h4 class="align_right">
+               Leg Locker is a project originally conceptualized by our classmate and paralympic swimmer, <a href="https://tuftsdaily.com/sports/2018/11/14/gelfand-finds-community-self-confidence-paralympic-swimming/">David Gelfald</a> and our classmate<a href="jeffreyblitt.com"> Jeffrey Blitt </a>.
+               David wears a lower limb prosthetic on his left leg and noticed that there is a lot of unused space within the leg.
+               Being able to store food, liquid, or small objects within that space
+               would add extra utlity to an already useful device for David.
+               He suggested turning this concept into our final project for senior design.
+            </h4>
+            <div class="fullrange">
+               <h2 class="align_right">Our Motivation</h2>
+            </div>
+            <h4 class="align_right">
+               Why mess with a good thing? For the million who rely on them for accessibility, mobility, and social inclusion,
+               prosthetics are an invaluable resource. Advancements in technology in
+               recent years have allowed many prosthetic users to do almost everything they would before the loss of a limb.
+               However, these developments have also typically focused on that concept of
+               restoring the "before" instead of the possibilities for "going beyond" in prosthetics.
+               This medical approach to prosthetic development has helped the assisitive technology industry produce reliable, functional,
+               and integratable prosthetics. However, prosthetic abadonment and rejection is still high
+               among amputees because of the limitations in prosthetics in carrying out <a href="https://pubmed.ncbi.nlm.nih.gov/18090439/">advanced tasks</a>.
+            </h4>
+         </div>
+      </div>
+      <div class="w3-container w3-dark-grey top-padding-24 w3-center"></div>
+      <div class="row gray_contain w3-container">
+         <!--</div>-->
+         <div class="fullrange">
+            <h2 class="titlepad w3-center">Our Team</h2>
+         </div>
+         <div class="w3-quarter">
+            <img class="medpic" src="LegLock/Allison.jpg">
+            <h4 class="w3-center">Allison Moore</h4>
+            <h5 class="w3-center">Design & Component Interfaces</h5>
+         </div>
+         <div class="w3-quarter">
+            <img class="medpic" src="LegLock/Megan.jpg">
+            <h4 class="w3-center">Megan Jenney</h4>
+            <h5 class="w3-center">Code & Electronics</h5>
+         </div>
+         <div class="w3-quarter">
+            <img class="medpic" src="LegLock/Niki.jpg">
+            <h4 class="w3-center">Niki Alden</h4>
+            <h5 class="w3-center">Materials & Polymer Lead</h5>
+         </div>
+         <div class="w3-quarter">
+            <img class="medpic" src="LegLock/david.jpg">
+            <h4 class="w3-center">David Gelfand</h4>
+            <h5 class="w3-center">Design, Fabrication, & Leg</h5>
+         </div>
+      </div>
+      <div class ="row">
+         <div class="fullrange">
+            <h1 class="w3-center subtitlepad"> Planning and Development</h1>
+         </div>
+         <div class="right_buffer w3-container w3-half">
+            <div class="divide_buffer">
+               <h4 class="align_left">
+                  We began our design process by reviewing the current state-of-the-art in prosthetics. In addition to reviewing current literature and products on the market, we relied on David’s expertise as a lifelong prosthetic user and as a member of many prosthetic-using communities. We also solicited feedback from prosthetists at <a href=”https://spauldingrehab.org/” >Spaulding Rehab </a> for a more professional opinion. Surprisingly, there is almost nothing like “Leg Locker” currently on the market. In our research, we found that the majority of medical prosthetics are focused on being as close to biological legs as possible. While some “alternative” prosthetics have been developed by groups such as <a href=”https://thealternativelimbproject.com/”> the alternative limb project </a>, they are usually highly individualized and geared toward artistic commentary over enhanced functionality. Given this state-of-the-art, we were excited to move forward with our development of the Leg Locker and our exploration of the concept of enhanced functionality for prosthetics. Having investigated the current state of prosthetics, we developed engineering requirements to direct our future work and planned out our timeline of work using a  Gantt Chart. We also further explored measurement metrics for our design requirements using a <a href=”https://docs.google.com/spreadsheets/d/1SXCRikFqlZ040YdMaXMzjUhdfr5BLoj4xfl-9myB5sk/edit?usp=sharing”>House of Quality</a>.
+               </h4>
+            </div>
+         </div>
+         <div class="w3-half">
+            <img class="chart" src="LegLock/EngineeringReqs.png">
+            <figcaption>
+               <b>Figure 1</b>: The relative weights we assigned our design requirements. These applied to our Pugh Chart when vetting solutions, our house of qualities, and our decision making thorughout the design process.
+            </figcaption>
+         </div>
+      </div>
+      <div class="row w3-container">
+         <div class="medpic">
+            <img class="pic" src="LegLock/GanttChart.png">
+            <figcaption>
+               <b>Figure 2</b>: A Gantt Chart of our team's timeline for product development. Given the short timeline for our project, we used a waterfall approach
+               with a heavy focus on planning. While we went through several prototype iterations in our development, we tried to develop a relatively comprehensive design
+               solution before starting our build process.
+            </figcaption>
+         </div>
+      </div>
+      <div id ="idea" class="row row_pad">
+         <div class="divide_buffer"></div>
+         <div class="container">
+            <div class="centered">
+               <div class="w3-container">
+                  <h2 class="w3-center">Ideation and Brainstorming</h2>
+               </div>
+               <div class="w3-third">
+                  <h3 class="w3-center">
+                  Set A: Brainstorming</h2>
+                  <p>
+                     While useful, a leg with pockets is a funny and out-of-the-box idea! With this is mind, we were excited to
+                     see what designs we would be able to develop if we started brainstorming with
+                     some creative "anything goes" thinking. To create space for
+                     a range of designs, we split our brainstorming session into three sets: Set A, Set B, and Set C.
+                     We used 15-minute design sprints and affinity mapping to generate a spectrum of smart, silly, and
+                     "smart and silly" ideas for our Set A: peristaltic pumps, disco legs, toothpaste tubes
+                     to squirt out water, etc. We then split these ideas into relevant
+                     categories using affinity mapping.
+                  </p>
+               </div>
+               <div class="w3-third mythird">
+                  <h3 class=" w3-center">
+                  Set B: Refinement</h2>
+                  <p>
+                     For our "Set B" of design, each group member generated 2-3 designs with more thought and enegy put into them. We reflected on these designs as a group
+                     and solicited feedback from our peers, instructors, and machine shop fabcriation experts in Bray Labs.
+                  </p>
+               </div>
+               <div class="w3-third">
+                  <h3 class=" w3-center">
+                  Set C: Proposals</h2>
+                  <p>
+                     For "Set C" of our design, we each created a CAD model of one proposed solution. I proposed a hinged storage component within the leg with a suppotive exoskeleton
+                     outside the leg and two access compartments. Niki proposed a soft bag and straw mechanism for a leg focused on storing water. For a similar water storage leg, David proposed a
+                     peristaltic pump mechanism with a soft water bottle held in suspension. Megan focused on electronic componenets and proposed an unlocking mechanism with a door based on the bend of David's Knee.
+                  </p>
+               </div>
+               <div class="w3-row">
+                  <div class="w3-third">
+                     <div class="two_pad">
+                        <div class="my_slideshow-container">
+                           <div class="mySlides1">
+                              <img id="trinitypic" src="LegLock/setA/dispensing.jpeg" style="width:100%">
+                           </div>
+                           <div class="mySlides1">
+                              <img id="trinitypic" src="LegLock/setA/features.jpeg" style="width:100%">
+                           </div>
+                           <div class="mySlides1">
+                              <img id="trinitypic" src="LegLock/setA/howliquidstored.jpeg" style="width:100%">
+                           </div>
+                           <div class="mySlides1">
+                              <img id="trinitypic" src="LegLock/setA/mechanics.jpeg" style="width:100%">
+                           </div>
+                           <div class="mySlides1">
+                              <img id="trinitypic" src="LegLock/setA/seta.jpeg" style="width:100%">
+                           </div>
+                           <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                           <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="w3-third">
+                     <div class="two_pad">
+                        <div class="my_slideshow-container">
+                           <div class="mySlides2">
+                              <img id="trinitypic" src="LegLock/setB/bray.jpg" style="width:100%">
+                           </div>
+                           <div class="mySlides2">
+                              <img id="trinitypic" src="LegLock/setB/Niki.png" style="width:100%">
+                           </div>
+                           <div class="mySlides2">
+                              <img id="trinitypic" src="LegLock/setB/Niki2.png" style="width:100%">
+                           </div>
+                           <div class="mySlides2">
+                              <img id="trinitypic" src="LegLock/setB/megan1.png" style="width:100%">
+                           </div>
+                           <div class="mySlides2">
+                              <img id="trinitypic" src="LegLock/setB/allison.png" style="width:100%">
+                           </div>
+                           <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                           <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="w3-third">
+                     <div class="two_pad">
+                        <div class="my_slideshow-container">
+                           <div class="mySlides3">
+                              <img id="trinitypic" src="LegLock/setC/allison2.png" style="width:100%">
+                           </div>
+                           <div class="mySlides3">
+                              <img id="trinitypic" src="LegLock/setC/david.png" style="width:100%">
+                           </div>
+                           <div class="mySlides3">
+                              <img id="trinitypic" src="LegLock/setC/megan.png" style="width:100%">
+                           </div>
+                           <div class="mySlides3">
+                              <img id="trinitypic" src="LegLock/setC/niki.png" style="width:100%">
+                           </div>
+                           <div class="mySlides3">
+                              <img id="trinitypic" src="LegLock/setB/allison.png" style="width:100%">
+                           </div>
+                           <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                           <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+<!---FINAL DESIGN-------------------------------------------->
+<div class="row no_pad gray">
+<div class="w3-half gray">
+	<div class="two_pad">
+		 <h2 class="w3-center">Final Design</h2>
+		 <h4>
+			 For our final design, we consulted with our sponser, Gary Leisk,
+			 to combine features suggested by different team members into a
+			 comprehensive product. Our concept used a single hinge secured by a solenoid
+			 locking mechanism to keep the door closed in place.
+
+			 We based our main model on my idea of a hinged
+			 design to allow for the storage of both solid and liquids
+			 with easy access, through a solenoid activiated a high knee flexion threshold. Water can be stored in the solid/liquid compartment in a soft water bottle
+			 inspired by David and Niki's designs. We make our device universally adaptable with
+			 a pyramid connector welded between the shin and the Össur Balance OM8 mechanical knee.
+
+		 </h4>
+	</div>
+</div>
+<div class="w3-half">
+	<img class="pic" src="LegLock/rendors/leg5.JPG">
+</div>
+</div>
+
+<div class="w3-container w3-dark-grey top-padding-24 w3-center"></div>
+
+
+<!---LAYUP-------------------------------------------->
+<div class="row no_pad ">
+<div  id= "carbonfiber"  class="row ">
+	<div class="two_pad">
+		<h2 class="w3-center  white subtitlepad">Fabrication and Construction</h2>
+
+		 <div class="b_centered">
+	<div class="row">
+			 <div class= w3-half>
+				 <h2 class="align_left white">Carbon Fiber Layup</h2>
+
+		 <p class="align_left threepad white">
+			 We decided to use a Carbon Fiber exoskeleton to create the main body of our leg.
+			 This design choice was based on the common use of carbon fiber within the prosthetics
+			 field as well as on our need for a strong leg exterior since "Leg Locker" does not have
+			 	internal support tubing common amoung many lower-limb prosthetics.
+				To creat our exeskelton, our team used a positive lay-up over a 3D print of the leg.
+				Although we initially  experimented with a range of negative layup techniques, we were not
+				able to produce as high quality of a product with a plaster based mold as we were able to with vaccum
+				sealing the positive model. Our final layups were composed of 6 layers pf Kevler Carbon Fiber due to its increased
+				mallubility relative to pure Carbon Fiber. We coated each sheet in an epoxy solution
+				and then vaccum sealed the full leg to set the mold.
+
+		 </p>
+	 </div>
+	 <div class="w3-half">
+
+				<div class="my_slideshow-container">
+					 <div class="mySlides4">
+							<img id="trinitypic" src="LegLock/layup/1.png" style="width:100%">
+					 </div>
+					 <div class="mySlides4">
+						 <img id="trinitypic" src="LegLock/layup/3.png" style="width:100%">
+
+					 </div>
+					 <div class="mySlides4">
+						 <img id="trinitypic" src="LegLock/layup/4.png" style="width:100%">
+
+					 </div>
+					 <div class="mySlides4">
+						 <img id="trinitypic" src="LegLock/layup/5.png" style="width:100%">
+
+					 </div>
+					 <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+					 <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+				</div>
+		 </div>
+
+</div>
+	 </div>
+	</div>
+</div>
+
+<!--DOOR INTEGRATION-------------------->
+
+<div class="row ">
+	<div class="h_container">
+		 <div class= w3-half>
+			 <h2 class="align_left">Door Assembly and Integration</h2>
+
+	 <p class="align_left threepad">
+		 While we initially tried to layup our door component, we found that Carbon fiber layups on the door would not secure well to the material and made it difficult for us to align the door with the body of the leg. Given that our door would be supporting minimal weight and that a carbon fiber door would solve more of an aesthetic purpose than a practical one, we opted to instead, shell the door with aluminum. I cut and bent aluminum to form a shell around the door and then secured this into the 3D printed model. A major struggle point for us regarding the door was figuring out how to have a close alignment of the door with the body of the leg since the carbon fiber layup made it difficult for users to have clean edges. Additionally, I struggled to place our hinge components in a way that would both allow a good swing radius for the door and while simultaneously securing the door close enough to the body for a tight and secure fit since I had CADed the door and leg with a relatively low tolerance between the two. In the end, I opted for a friction hinge to allow for easy static movement of the door once the piston had detached from a notch at the top of the door.
+
+	 </p>
+ </div>
+ <div class="w3-half">
+
+			<div class="my_slideshow-container">
+				 <div class="mySlides5">
+						<img id="trinitypic" src="LegLock/door/6.png" style="width:100%">
+				 </div>
+				 <div class="mySlides5">
+						<img id="trinitypic" src="LegLock/door/1.png" style="width:100%">
+				 </div>
+				 <div class="mySlides5">
+						<img id="trinitypic" src="LegLock/door/3.png" style="width:100%">
+				 </div>
+				 <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+				 <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+			</div>
+	 </div>
+</div>
+</div>
+
+<!--Electronics-------------------->
+
+<div id="electronics" class="row">
+	<div class="two_pad b_centered white">
+		<div class="row toppad">
+		<div class="w3-half">
+		 <h2 class="align_left">Electronics</h2>
+		 <h4>
+			 While Niki, David, and I moved forward with fabrication, Megan took the lead on electronics.
+			 Her system integrated a mini push-pull solenoid, a Time to Flight VL6180X distance sensor, and a Raspberry Pi 0
+			 to extrude and retract the solenoid relative to the measurements of the distance sensor.
+			 She also integrated this into a website to allow for manual control of the Solenoid during testing. A github for the electronics can be found <a href="https://github.com/meganjenney/legLocker"> here</a>.
+		 </h4>
+</div>
+<div class="w3-half">
+	<img id="trinitypic" class = "w3-center medpic" src="LegLock/electronics.jpg">
+		</div>
+	</div>
+</div>
+</div>
+
+<!--DOOR INTEGRATION-------------------->
+
+<div class="row ">
+	<div class="h_container">
+		 <div class= w3-half>
+			 <h2 class="align_left">Final Assembly and Integration</h2>
+
+	 <p class="align_left threepad">
+
+	 In the "tale as old as time" of manufacturing, one of the most difficult parts of our build process was getting our system to fit together. Our team had several modular parts that needed to fit into one leg: our Carbon Fiber exoskeleton, the Össur mechanical knee, the electronics, our door, and the locking mechanism. To integrate our knee, David welded a plate onto a metal shaft compatible with a universal pyramid adapter. Meanwhile, I worked on the compatibility between the leg and the door. We dremeled and chiseled the leg to allow a better match up with the door and I outlined the door in aluminum to fill in some of the gaps where the two met. For the electronics, I designed a solenoid mounting system that would let the solenoid slide into a holding point in the door. I also designed a static hinge mechanism to attach the door to the main body of the leg.
+
+	 </p>
+ </div>
+ <div class="w3-half">
+
+			<div class="my_slideshow-container">
+				 <div class="mySlides6">
+						<img id="trinitypic" src="LegLock/door/2.png" style="width:100%">
+				 </div>
+				 <div class="mySlides6">
+						<img id="trinitypic" src="LegLock/door/4.png" style="width:100%">
+				 </div>
+				 <div class="mySlides6">
+						<img id="trinitypic" src="LegLock/door/5.png" style="width:100%">
+				 </div>
+				 <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+				 <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+			</div>
+	 </div>
+</div>
+</div>
+
+
+<!--FINAL PRODUCT------------>
+<div class="row no_pad ">
+	<div class="two_pad">
+		 <h2 class="w3-center">Final Product</h2>
+		 <div class="row   videoWrapper">
+<iframe class="vid" width="560" height="349" src="https://www.youtube.com/embed/aXgsBRH5ZlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+	<h4>
+		After a semester of work, we presented our final product in a showcase to stakeholders and the Tufts Community.  The final version of Leg Locker holds a 2000+ lb capacity along the body of the leg and has a volumetric capacity of 24 oz. The calf and leg are also lighter than the average leg to allow for extra weight to be used for storage. Our final prototype is composed of 6 layers of carbon fiber layup around a PLA 3D printed exoskeleton for the body of the leg. The leg connects to standard knee and foot components with a metal plate welded to a shaft. . The internal storage of the knee can be accessed through an aluminum-reinforced hinged door and the interior of the leg is softened with a net to prevent stored items from moving around. A solenoid mounted to the interior of the leg locks the door in place. This can be turned on and off by bending the knee at an upward right angle for 5 seconds.
+	</h4>
+
+</div>
+<div class="row">
+		 <div class="w3-half">
+		 <img id="trinitypic" class = "w3-center horipad medpic" src="LegLock/final.png"></div>
+		 <div class="w3-half">
+			 <img id="trinitypic" class = "w3-center horipad medpic" src="LegLock/bill.png"></div>
+
+		 </div>
+	 </div>
+</div>
+
+<!--REFLECTION-------->
+
+<div class="row no_pad ">
+	<div class="two_pad">
+		 <h2 class="w3-center">Reflection</h2>
+		 <h4>
+			 Going into this design process, I hadn’t had the chance to work on a long-term project from start to finish and it was rewarding to be able to carry something from concept to final product.
+			 I think seeing that process of development for a project like the Leg Locker was exciting for me since David worked on our team. Where many other groups in senior design made products for a very removed user and or situations, developing the Leg Locker felt very self-directed and tied to real applications.
+		 </h4>
+
+<div class="row">
+
+		 <img id="trinitypic" class = "w3-center horipad medpic" src="LegLock/teampic.jpeg">
+
+</div>
+
+
+	<div class="w3-quarter">
+		<h3 class="w3-center">Tolerance with people</h3>
+		<p>My team for senior design was an absolute joy to work with, so  “tolerance” probably seems like a terse word to use when describing what I’ve learned from them. However, I do mean “tolerance” in the best way possible. While far more than “tolerable” to work with, I think part of the reason we worked well together is because of our willingness to show tolerance and patience with each other. Throughout this design process, everyone on our team had moments where they were sick, tired, stressed, or couldn’t bring their best self on a particular day. Having tolerance and understanding for each other during these times offered a lot more room to fail and I think let us work harder in some ways. Similarly, when there were differences in communication style or expectations within our team, we communicated that and took time to work out those differences. Having tolerance and patience for each other throughout this design process let us help one another and work through issues as a team.
+
+	</p>
+	</div>
+<div class="w3-quarter">
+	<h3 class="w3-center">Tolerance with parts</h3>
+	<p>
+Ah, the difficulties of integration! When building the leg locker, our team focused on making really good individual components: our carbon fiber layup of the leg, the electronics system, and our door component. However, we put less time and energy into the points of integration between these systems and these eventually ended up being the weakest point in our system: the fit between the door and the body, the attachment of the electronics to the leg, the material strength of our hinge, and the weld attaching our aluminum plate to the knee. We put integrating these parts off until the end and spent the least energy making sure they were strong and durable. When we assembled our leg, these parts were the weakest. This was made abundantly clear after our demo when David jumped on the leg and it failed along these points.
+</p>
+</div>
+
+<div class="w3-quarter">
+	<h3 class="w3-center">Building and Technical Skills</h3>
+	<p>
+		Throughout building Leg Locker, I had the chance to learn new hard skills and build on abilities I have picked up on in the past. Carbon Fiber Polymer Layup and Composite manufacturing are both new areas for me. I felt grateful for the chance to learn about both during this process. It was similarly exciting and rewarding to verify the strength of our layup on the Instron machine (it can hold a 2000lb+ load!). This project also let me practice some of my existing skills including SolidWorks, SolidWorks simulation, 3D printing, and basic fabrication.
+</p>
+</div>
+<div class="w3-quarter">
+	<h3 class="w3-center">Storytelling and Marketing</h3>
+	<p>
+On the “soft skill” side, I think I learned a lot by figuring out the right way to tell a story about Leg Locker. In some ways, this project followed the specialized design model common in assistive technology and is made with David’s needs and preferences at the center. However, there are also a lot of exciting conceptual elements behind an idea like Leg Locker, and the concept of “prosthetics with enhanced functionality” has a lot of application outside of David’s particular needs. Similarly, since this is a student project, our learning and process are in many ways more important than our end product. Combining these elements into one story and presenting that story to others has been an interesting and educational process.
+</p>
+</div>
+
+		 </div>
+</div>
+      <div id="head-padding"></div>
+      <!-- Footer
+
+			/ About Section ------------------------------------------------->
+      <footer class="w3-light-grey w3-padding-64 w3-center" id="about"> </footer>
+      <!-- CHANGES -->
+      <script src="https://cdn.rawgit.com/download/jQuery-Touch-Events/0.9.0/src/jquery.mobile-events.min.js"></script>
+      <script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+      <script type="text/javascript">
+         var slideIndex = [1, 1, 1, 1, 1, 1];
+         /* Class the members of each slideshow group with different CSS classes */
+         var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"];
+         showSlides(1, 0);
+         showSlides(1, 1);
+         showSlides(1, 2);
+				 showSlides(1, 3);
+				 showSlides(1, 4);
+				  showSlides(1, 5);
+
+         function plusSlides(n, no) {
+         	showSlides(slideIndex[no] += n, no);
+         }
+
+         function showSlides(n, no) {
+         	var i;
+         	var x = document.getElementsByClassName(slideId[no]);
+         	if(n > x.length) {
+         		slideIndex[no] = 1
+         	}
+         	if(n < 1) {
+         		slideIndex[no] = x.length
+         	}
+         	for(i = 0; i < x.length; i++) {
+         		x[i].style.display = "none";
+         	}
+         	x[slideIndex[no] - 1].style.display = "block";
+         }
+      </script>
+   </body>
+</html>
