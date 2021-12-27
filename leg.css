@@ -1,0 +1,196 @@
+.largepic {
+  width: 50%;
+}
+.medpic {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.pic {
+  width: 100%;
+}
+.medpic2 {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%
+
+}
+.chart{
+  width: 100%;
+  padding-top: 3%;
+
+}
+.megpic{
+  width: 60;
+  padding: 5%;
+}
+.horipad{
+  padding: 5%;
+}
+
+.gray_contain{
+  padding: 3vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-color: #f1f1f1
+}
+
+
+.gray{
+  background-color: #f1f1f1;
+}
+#carbonfiber{
+    background-image: url("LegLock/dark_layup.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-size: cover;
+}
+.white{
+  color: #fff;
+}
+.titlepad {
+  padding-bottom: 3vw;
+  width:100%;
+  padding-left:2.5%;
+}
+.subtitlepad {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  width:100%;
+}
+ .left_buffer{
+   width: 49%;
+   float: left;
+ }
+.fullrange{
+  width:100%;
+}
+.row{
+  padding-bottom: 3vw;
+}
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ .divide_buffer{
+   width: 100%;
+ }
+
+ .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding:5%;
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+}
+ .align_right{
+   text-align: right;
+   margin-right: 0%;
+ }
+ .align_left{
+   text-align: left;
+   margin-right: 0%;
+ }
+.hori_pad{
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+#electronics{
+  background-image: url("LegLock/About.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 5%;
+}
+
+ /* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  padding-top: 3%;
+  color: white;
+}
+.h_container {
+  position: relative;
+  text-align: center;
+  padding-top: 3%;
+  width:90%;
+  margin-left: 5%;
+}
+
+
+.clear_container {
+  position: relative;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.my_slideshow-container {
+    float: left;
+    position: relative;
+}
+
+.b_centered {
+  width:90%;
+  background-color: #000;
+  margin-left: 5%;
+  color: #fff;
+  position: relative;
+  padding: 3%;
+}
+.toppad{
+  margin-top: 5%;
+}
+.bb_centered {
+  width:90%;
+  background-color: #000;
+  margin-left: 5%;
+  margin-top: 5%;
+  color: #fff;
+  position: relative;
+  padding: 3%;
+}
+.threepad{
+  padding-right:5%;
+}
+/* Centered text */
+.centered {
+  width:75%;
+  background-color: #fff;
+  margin-left: 12.5%;
+  color: #000;
+  padding: 3%;
+}
+#idea{
+  background-image: url("LegLock/cards.png");
+  background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+@media (max-width:1000px){
+  p{
+    font-size: 12px;
+  }
+
+}
+.row_pad{
+padding-bottom: 3vw;
+}
+
+.two_pad {
+  padding-top: 5%;
+  padding-left: 5%;
+ width: 90%;
+}
+.no_pad{
+  padding: 0%;
+}
