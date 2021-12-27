@@ -35,7 +35,7 @@ body {font-family: "Raleway", Arial, sans-serif}
   <!-- Photo Grid -->
   <div class="w3-row">
     <!--frc robotics-->
-    <div class="fifth">
+    <div class="sixth">
       <div class="card">
           <div class="front">
               <img id="robohead" src="Pictures/RoboHead-square.png" style="width:100%;border-radius: 50%;">
@@ -47,7 +47,7 @@ body {font-family: "Raleway", Arial, sans-serif}
       </div>
     </div>
     <!--hp labs-->
-    <div class="fifth">
+    <div class="sixth">
        <div class="card">
           <div class="front">
             <img id="HPLabs"src="Pictures/HPLabs-square.png" style="width:100%;border-radius: 50%;">
@@ -58,7 +58,7 @@ body {font-family: "Raleway", Arial, sans-serif}
         </div>
     </div>
     <!--recentcad-->
-    <div class="fifth">
+    <div class="sixth">
       <div class="card">
           <div class="front">
              <img id="RecentCAD" src="Pictures/RecentCad-square.png" style="width:100%;border-radius: 50%;">
@@ -68,19 +68,8 @@ body {font-family: "Raleway", Arial, sans-serif}
           </div>
         </div>
     </div>
-    <!--otherrobotics
-    <div class="sixth">
-       <div class="card">
-          <div class="front">
-              <img id="OtherRobotics" src="Pictures/OtherRobotics-square.png" style="width:100%;border-radius: 50%;">
-       </div>
-        <div id="otherroboback" class="back">
-            <div class="back-background">Other Robotics</div>
-          </div>
-        </div>
-   </div>-->
      <!--webprogramming-->
-     <div class="fifth">
+     <div class="sixth">
         <div class="card">
           <div class="front">
               <img src="Pictures/WebProgramming-square.png" style="width:100%;border-radius: 50%;">
@@ -91,7 +80,7 @@ body {font-family: "Raleway", Arial, sans-serif}
         </div>
     </div>
     <!--engineeringeducation-->
-    <div class="fifth">
+    <div class="sixth">
         <div class="card">
           <div class="front">
              <img src="Pictures/EnginEdu-square.png" style="width:100%;border-radius: 50%;">
@@ -100,7 +89,18 @@ body {font-family: "Raleway", Arial, sans-serif}
             <div class="back-background">Engineering<br/>Education</div>
           </div>
         </div>
+     </div>
 
+     <!--senior design-->
+     <div class="sixth">
+       <div class="card">
+           <div class="front">
+              <img id="RecentCAD" src="Pictures/LegLock/legstock.jpg" style="width:100%;border-radius: 50%;">
+        </div>
+         <div id="legback" class="back">
+             <div class="back-background">Leg Locker</div>
+           </div>
+         </div>
      </div>
   </div>
 
@@ -170,6 +170,10 @@ $(document).ready(function(){
       //this will redirect us in same window
       document.location.href = "education.html";
    });
+     $("#legback").click(function(){
+    //this will redirect us in same window
+    document.location.href = "leglocker.html";
+  });
 
 });
 </script>
